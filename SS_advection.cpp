@@ -2,22 +2,19 @@
 using namespace std;
 	
 // taller ec adveccion
-
 int main(){
-    
         //Se inicializan y se definen las variables. iteracion (700)
 		double mid = 0.5, dtn = 4, delta=0.01, x=-2; int n =((dtn)+ delta)/delta, i, k;
 		double *yn = new double[n], *yo = new double[n];
 		
 		for(i=0; i<n; i++){
-			
 			if( x>mid or x<-mid){
 				yo[i]=0;}
 				
 			else{yo[i]=mid;}
 			cout << 0 << "  " << x << "  " << yo[i] << endl;
 			x= x + delta;}
-
+	
         //iteracion en tiempo
 		for(k=1; k<=700; k++){
 		    // se define la variable
@@ -34,6 +31,6 @@ int main(){
 			if(k%175==0){
 			    
 				for(i=0;i<n;i++){
-					cout << k << "  " << x << "  " << yn[i] << endl;
+				cout << k << "  " << x << "  " << yn[i] << endl;
 		        	x= x + delta;}}}
 		return 0;}
